@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { 
   TrendingUp, Users, MessageSquare, Clock, ArrowUpRight, 
   ArrowDownRight, LayoutDashboard, KanbanSquare, DollarSign, 
@@ -36,14 +37,14 @@ export default function DashboardPage() {
               <LayoutDashboard className="h-4 w-4" />
               <span>Analytics Hub</span>
             </button>
-            <a href="/inbox" className="w-full flex items-center space-x-3 px-4 py-2.5 rounded-xl text-gray-500 hover:text-[#111827] hover:bg-gray-50 text-sm font-medium transition-all text-left block">
+            <Link href="/inbox" className="w-full flex items-center space-x-3 px-4 py-2.5 rounded-xl text-gray-500 hover:text-[#111827] hover:bg-gray-50 text-sm font-medium transition-all text-left block">
               <MessageSquare className="h-4 w-4" />
               <span>Smart Inbox</span>
-            </a>
-            <a href="/crm" className="w-full flex items-center space-x-3 px-4 py-2.5 rounded-xl text-gray-500 hover:text-[#111827] hover:bg-gray-50 text-sm font-medium transition-all text-left block">
+            </Link>
+            <Link href="/crm" className="w-full flex items-center space-x-3 px-4 py-2.5 rounded-xl text-gray-500 hover:text-[#111827] hover:bg-gray-50 text-sm font-medium transition-all text-left block">
               <KanbanSquare className="h-4 w-4" />
               <span>Lead Pipeline</span>
-            </a>
+            </Link>
           </nav>
         </div>
 
@@ -55,7 +56,7 @@ export default function DashboardPage() {
             </div>
             <p className="text-xs font-bold text-white">Wema Open Banking</p>
             <p className="text-[11px] text-gray-400 mt-1 leading-normal">
-              Merchant account feeds are fully unified for instant alternative risk evaluation scoring.
+              Merchant account feeds are unified for risk evaluation scoring.
             </p>
           </div>
         </div>
@@ -133,7 +134,7 @@ export default function DashboardPage() {
             <div>
               <h3 className="text-sm font-bold text-[#111827]">Wema Alternative Credit Lending Bridge</h3>
               <p className="text-xs text-gray-600 mt-0.5 max-w-2xl leading-relaxed">
-                By organizing daily operational invoice trails and transactional messaging metrics safely into structured data logs, this entity builds credit scoring value to access commercial lines automatically.
+                By organizing daily operational invoice trails safely into structured data logs, this entity builds credit scoring value to access commercial lines automatically.
               </p>
             </div>
           </div>
